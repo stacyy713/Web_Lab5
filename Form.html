@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гриценко А.О., група ІА-91</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Форма для заповнення</h1>
+<form>
+    <p><label>ПІБ</label><br><input type="text" id="name" placeholder="Іванов І.П." value=""/></p>
+    <p><label>Варіант</label><br><input type="text" id="variant" placeholder="13" value=""/></p>
+    <p><label>Група</label><br><input type="text" id="group" placeholder="ІА-91" /></p>
+    <p><label>Телефон</label><br><input type="text" id="phone" placeholder="(097)-293-13-14" /></p>
+    <p><label>ID-card</label><br><input type="text" id="card" placeholder="KB №123456" /></p>
+<!--    <button onclick="nameCheck()">Підтвердити</button>-->
+    <input onclick="fieldsCheck()" type="button" id="btn" value="Підтвердити" />
+    <script src="script.js"></script>
+</form>
+<div id="info">
+    <label><strong>ПІБ: </strong></label><p id="new_name"></p>
+    <label><strong>Варіант: </strong></label><p id="new_var"></p>
+    <label><strong>Група: </strong></label><p id="new_group"></p>
+    <label><strong>Телефон: </strong></label><p id="new_phone"></p>
+    <label><strong>ID-card: </strong></label><p id="new_card"></p>
+</div>
+</body>
+</html>
